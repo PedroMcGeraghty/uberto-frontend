@@ -32,21 +32,46 @@ La comisión de la plataforma es del **5 %** del precio total (base + plus
 
 ### App desde el lado del Pasajero
 
+### Login
+Como primer caso de uso tenemos el login. Cuenta con validación de campos vacíos u erróneos.
+Aca es donde entra en juego el tipo de rol del usuario, podemos iniciar sesion como pasajero o como chofer en base a la cuenta.
+
 | Login | 
 |-------|
 | ![Login](docs/img/login.jpeg) |
+
+>[!NOTE]
+>La aplicación implementa mecanismos de seguridad que aseguran que solo usuarios autenticados puedan acceder a las funcionalidades protegidas. Utiliza Spring Security junto con JWT (JSON Web Tokens) para la autenticación, y cuenta con guardas de ruta en el frontend para validar la sesión del usuario. Para ver como se implementa la seguridad de la apliación pueden visitar el repositorio del backend https://github.com/PedroMcGeraghty/uberto-backend
+
+### Home
+
+La pantalla principal permite al usuario completar un formulario con **origen, destino, fecha y cantidad de pasajeros**. Al presionar el botón **Filter**, la app consulta los choferes disponibles en ese horario.
+Cada resultado muestra información del conductor, vehículo, patente, precio y rating. Al seleccionar un chofer, se redirige a la página de confirmación de viaje para finalizar la reserva.
 
 | Home (form vacío) | Home (con resultados)   | Confirmación de viaje |
 |-----------------------|-----------------------|-----------------------|
 | ![Home – empty](docs/img/home-passenger.jpeg) |![Home – results](docs/img/home-search-driver.jpeg) | ![Confirm travel](docs/img/confirm-trip.jpeg)  |
 
+### Perfil del Pasajero
+
+En esta sección, el usuario puede modificar sus **datos personales (nombre, apellido y teléfono)**, **cargar saldo** en su cuenta para utilizar en viajes, y **gestionar su red de amigos**.
+Se puede **buscar usuarios, agregarlos como amigos y también eliminarlos**. Toda la información se organiza en pestañas accesibles desde el mismo perfil.
+
 | Perfil del pasajero (Datos Personales) | Dinero disponible del Usuario | Amigos del usuario | 
 |-----------------------|-----------------------|-----------------------|
 | ![Profile – data](docs/img/profile-data.jpeg) | ![Profile - Balance](docs/img/profile-balance.jpeg) | ![Profile - Friends](docs/img/profile-search-friends.jpeg)
 
+Desde el perfil, el pasajero puede acceder a:
+- Viajes pendientes: lista de reservas próximas aún no realizadas.
+- Viajes completados: historial de viajes ya finalizados.
+- Calificación de viajes: si un viaje ya ocurrió y aún no fue calificado, el usuario puede dejar una calificación con puntaje y comentario para el chofer.
+
 | Viajes pendientes del Pasajero | Viajes completados del pasajero | Calificacion de un viaje | 
 |-----------------------|-----------------------|-----------------------|
 | ![Profile – Trips Pending](docs/img/profile-pending-trips.jpeg) | ![Profile - Trips Complete](docs/img/profile-complete-trips.jpeg) | ![Profile - Rating finished trip](docs/img/profile-trips-rating.jpeg)
+
+Por ultimo, el pasajero puede acceder a la lista de calificaciones que ha realizado a distintos choferes.
+Cada entrada muestra el puntaje asignado y el comentario, y se brinda la posibilidad de eliminar cualquier calificación en caso de que desee modificarla o retractarse.
 
 | Calificaciones hechas por el Pasajero |  
 |-----------------------|
