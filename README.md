@@ -63,6 +63,11 @@ La comisión de la plataforma es del **5 %** del precio total (base + plus
 | ![Home – empty](docs/img/home-driver.jpeg) |![Home – results](docs/img/home-driver-form.jpeg) 
 
 
+| Perfil del chofer (Datos Personales) | Fiajes finalizados del chofer | Calificaciones hacia el chofer | 
+|-----------------------|-----------------------|-----------------------|
+| ![Profile – data](docs/img/profile-driver-data.jpeg) | ![Profile - Trips](docs/img/profile-driver-trips-completed.jpeg) | ![Profile - Ratings](docs/img/profile-driver-ratings.jpeg)
+
+
 ---
 
 ## ⚙️ Stack técnico
