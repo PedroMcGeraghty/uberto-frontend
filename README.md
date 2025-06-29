@@ -28,9 +28,8 @@ La comisión de la plataforma es del **5 %** del precio total (base + plus
 
 ---
 
-## 🖼️ Screenshots
 
-### App desde el lado del Pasajero
+## App desde el lado del Pasajero
 
 ### Login
 Como primer caso de uso tenemos el login. Cuenta con validación de campos vacíos u erróneos.
@@ -77,16 +76,31 @@ Cada entrada muestra el puntaje asignado y el comentario, y se brinda la posibil
 |-----------------------|
 | ![Profile – Trips Pending](docs/img/profile-ratings.jpeg) | 
 
-### App desde el lado del Chofer
+## App desde el lado del Chofer
+
+### Login
+Mismo caso de uso como vimos anteriormente pero nos podemos iniciar sesión con un conductor.
 
 | Login | 
 |-------|
 | ![Login](docs/img/login-driver.jpeg) |
 
+
+### Home
+
+En la pagina principal tendremos un formulario similiar al de pasajero con la diferencia que este nos permitira buscar los viajes pendiendtes que tiene un chofer utilizando como criterios de búsqueda el nombre del pasajero, el origen y el destino del viaje.
+
 | Home del chofer (form vacío) | Formulario del chofer (con resultados de viajes pendientes)   
 |-----------------------|-----------------------|
 | ![Home – empty](docs/img/home-driver.jpeg) |![Home – results](docs/img/home-driver-form.jpeg) 
 
+### Perfil
+
+Al igual que el pasajero contamos con un perfil para el chofer que está dividido en tres secciones:
+
+- **Datos personales:** muestra su nombre, apellido y el precio base por viaje, que puede modificar desde esta misma vista.
+- **Viajes completados:** historial de todos los viajes realizados.
+- **Calificaciones recibidas:** listado de valoraciones que los pasajeros le han hecho, incluyendo puntaje y comentarios. Esta sección es solo de visualización, sin posibilidad de editar o eliminar.
 
 | Perfil del chofer (Datos Personales) | Fiajes finalizados del chofer | Calificaciones hacia el chofer | 
 |-----------------------|-----------------------|-----------------------|
