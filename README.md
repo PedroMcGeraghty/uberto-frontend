@@ -30,6 +30,8 @@ La comisión de la plataforma es del **5 %** del precio total (base + plus
 
 ## 🖼️ Screenshots
 
+### App desde el lado del Pasajero
+
 | Login | 
 |-------|
 | ![Login](docs/img/login.jpeg) |
@@ -49,6 +51,16 @@ La comisión de la plataforma es del **5 %** del precio total (base + plus
 | Calificaciones hechas por el Pasajero |  
 |-----------------------|
 | ![Profile – Trips Pending](docs/img/profile-ratings.jpeg) | 
+
+### App desde el lado del Chofer
+
+| Login | 
+|-------|
+| ![Login](docs/img/login-driver.jpeg) |
+
+| Home del chofer (form vacío) | Formulario del chofer (con resultados de viajes pendientes)   
+|-----------------------|-----------------------|-----------------------|
+| ![Home – empty](docs/img/home-driver.jpeg) |![Home – results](docs/img/home-driver-form.jpeg) 
 
 
 ---
