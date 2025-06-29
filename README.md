@@ -59,7 +59,7 @@ La comisión de la plataforma es del **5 %** del precio total (base + plus
 | ![Login](docs/img/login-driver.jpeg) |
 
 | Home del chofer (form vacío) | Formulario del chofer (con resultados de viajes pendientes)   
-|-----------------------|-----------------------|-----------------------|
+|-----------------------|-----------------------|
 | ![Home – empty](docs/img/home-driver.jpeg) |![Home – results](docs/img/home-driver-form.jpeg) 
 
 
